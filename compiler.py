@@ -29,6 +29,7 @@ build_exe_options = {
     "packages": [
         "ok",
         "src",
+        "onnxocr",
     ],
     "includes": [
         "uuid",
