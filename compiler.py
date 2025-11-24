@@ -4,8 +4,6 @@ from pathlib import Path
 
 from cx_Freeze import setup, Executable
 
-from models.metadata import Metadata
-
 python_path = Path(sys.executable).parent.parent
 
 instructions = [
