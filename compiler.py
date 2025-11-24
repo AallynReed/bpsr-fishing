@@ -30,6 +30,7 @@ build_exe_options = {
         "ok",
         "src",
         "onnxocr",
+        "pynput",
     ],
     "includes": [
         "uuid",
