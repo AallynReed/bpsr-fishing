@@ -22,7 +22,7 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Compile code into MSI package
-        run: python compile.py bdist_msi
+        run: python compiler.py bdist_msi
 
       - name: Move Files
         run: |
