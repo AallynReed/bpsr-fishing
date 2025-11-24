@@ -12,7 +12,7 @@ idna==3.11
     # via requests
 mouse==0.7.1
     # via ok-script
-numpy==2.3.4
+numpy
     # via
     #   opencv-python
     #   openvino
