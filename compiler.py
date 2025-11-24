@@ -26,6 +26,14 @@ instructions = [
 ]
 
 build_exe_options = {
+    "packages": [
+        "ok",
+        "src",
+    ],
+    "includes": [
+        "uuid",
+        "src",
+    ],
     "excludes": [
         "wheel",
         "cx_Freeze",
@@ -40,7 +48,7 @@ build_exe_options = {
 }
 
 bdist_msi_options = {
-    "initial_target_dir": f"[ProgramFiles64Folder]BPSR-Fishing",
+    "initial_target_dir": f"[AppDataFolder]BPSR-Fishing",
     "target_name": "BPSR-Fishing",
     "upgrade_code": "{680027cc-0e73-40a1-ace8-9c108fd5c850}",
     "add_to_path": True,
@@ -59,13 +67,13 @@ setup(
     options=options,
     license="MIT",
     license_file="LICENSE",
-    keywords="blueprotocol,fishing,python",
+    keywords="blueprotocol,fishing,python,ok-script",
     executables=[
         Executable(
             "main.py",
             target_name=f"BPSR-Fishing.exe",
             icon="assets\\favicon.ico",
-            base="Win32GUI",
+            base=None,#"Win32GUI",
             copyright=f"Aallyn 2025-present",
             shortcut_name="BPSR Fishing",
             shortcut_dir="DesktopFolder",
