@@ -6,6 +6,8 @@ from cx_Freeze import setup, Executable
 
 python_path = Path(sys.executable).parent.parent
 
+version = "1.0.0"
+
 instructions = [
     ("--set-version-string", "CompanyName", "Aallyn"),
     ("--set-version-string", "FileDescription", "BPSR Fishing"),
