@@ -73,7 +73,7 @@ setup(
             "main.py",
             target_name=f"BPSR-Fishing.exe",
             icon="assets\\favicon.ico",
-            base=None,#"Win32GUI",
+            base="Win32GUI",
             copyright=f"Aallyn 2025-present",
             shortcut_name="BPSR Fishing",
             shortcut_dir="DesktopFolder",
