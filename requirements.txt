@@ -76,3 +76,4 @@ typing-extensions==4.15.0
     # via ok-script
 urllib3==2.5.0
     # via requests
+cx-freeze
